@@ -17,3 +17,14 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+test('popping twice with two elements return the correct words in order', () => {
+    stack.push(1);
+    stack.push(2);
+    expect(stack.pop()).toBe(2);
+    expect(stack.pop()).toBe(1);
+});
+
+test('pushing then popping returns the pushed value', () => {
+    stack.push(1);
+    expect(stack.pop()).toBe(2);
+});
