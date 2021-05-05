@@ -26,5 +26,5 @@ test('popping twice with two elements return the correct words in order', () => 
 
 test('pushing then popping returns the pushed value', () => {
     stack.push(1);
-    expect(stack.pop()).toBe(2);
+    expect(stack.pop()).toBe(1);
 });

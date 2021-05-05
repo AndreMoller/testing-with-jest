@@ -28,6 +28,7 @@ test('pop med tom stack borde retunera undefined', async () => {
   await pop.click();
   let alertText = await driver.switchTo().alert().getText();
   expect(alertText).toEqual("Tog bort undefined");
+  await driver.switchTo().alert().accept();
 });
 
 describe('Clicking "Pusha till stacken"', () => {
